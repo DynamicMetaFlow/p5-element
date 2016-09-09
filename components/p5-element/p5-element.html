@@ -93,6 +93,7 @@ Or remove the code editor completely:
           <textarea value="{{function.content | addDisplayFn}}" id="function-{{index}}" class="other-function code" placeholder="enter draw function" rows="4">></textarea>
         </template>
 
+        <button class="btn" on-click="{{_addFunction}}">add function</button>
 
       </core-collapse>
 
@@ -136,7 +137,7 @@ Or remove the code editor completely:
        * @property globalVars
        * @type {String}
        */
-      globalVars: 'x= 15,\ny = 15',
+      globalVars: '',
       /**
        * Setup function for the p5.js component
        *
@@ -150,7 +151,7 @@ Or remove the code editor completely:
        * @property drawFunction
        * @type {String}
        */
-      drawFunction: 'fill(255,5);\nrect(-1, -1, width+1, height+1);\nrect(x, y, 20, 20);\nx++;\ny++;\nif(x > width - 20) x = 0;\nif(y > height - 20) y = 0; ',
+      drawFunction: '',
       /**
        * Hide the code block and only display canvas
        *
