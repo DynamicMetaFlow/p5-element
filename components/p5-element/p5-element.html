@@ -75,7 +75,6 @@ Or remove the code editor completely:
 
       <core-collapse opened="true" id="code_collapse">
 
-        <button class="btn" on-click="{{_gistLogin}}">save as gist</button>
         <div class="code">var </div>
         <textarea value="{{globalVars}}" id="varText" class="setup-function code vars" placeholder="" rows="2">></textarea>
         <div class="code">;</div>
@@ -92,8 +91,6 @@ Or remove the code editor completely:
           <div class="error">{{function.errDisplay}}</div>
           <textarea value="{{function.content | addDisplayFn}}" id="function-{{index}}" class="other-function code" placeholder="enter draw function" rows="4">></textarea>
         </template>
-
-        <button class="btn" on-click="{{_addFunction}}">add function</button>
 
       </core-collapse>
 
