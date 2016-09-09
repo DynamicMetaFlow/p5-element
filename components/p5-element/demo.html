@@ -43,10 +43,9 @@
   </script>
 
   <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
-  <div>
   <p5-element></p5-element>
 
-  <p5-element id="second"></p5-element>
+  <p5-element></p5-element>
 
   <script>
    var secondInstance = document.querySelector('#second');
@@ -55,7 +54,6 @@
 
    secondInstance.drawFunction = "background(255);\nellipse(x, y, 10, 10);\nx+=speedX;\ny+=speedY;\nif(x>width - 5 || x < 5) speedX = -speedX;\nif(y > height - 5 || y < 5) speedY = -speedY;";
   </script>
-  </div>
   <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 
 </body>
