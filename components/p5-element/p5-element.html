@@ -58,7 +58,7 @@ Or remove the code editor completely:
 @status alpha
 @homepage http://sepans.github.io/p5-element
 -->
-<polymer-element name="p5-element" attributes="setupFunction hideEditor">
+<polymer-element name="p5-element" attributes="setupFunction drawFunction globalVars hideEditor">
 
   <template>
 
@@ -151,7 +151,7 @@ Or remove the code editor completely:
        * @property drawFunction
        * @type {String}
        */
-      drawFunction: 'fill(255,5);\nrect(-1, -1, width+1, height+1);\nrect(x, y, 20, 20);\nx++;\ny++;\nif(x > width - 20) x = 0;\nif(y > h',
+      drawFunction: 'fill(255,5);\nrect(-1, -1, width+1, height+1);\nrect(x, y, 20, 20);\nx++;\ny++;\nif(x > width - 20) x = 0;\nif(y > h,
       /**
        * Hide the code block and only display canvas
        *
